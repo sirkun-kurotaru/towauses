@@ -1,0 +1,896 @@
+/* header css */
+.header_container{
+  background-color: #FFFFFF;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+.title_contents{
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 11px 50px;
+}
+.logo_contents{
+  color: #1d8993;
+  display: flex;
+  flex-flow: column-reverse;
+}
+.logo_contents img{
+  width: 300px;
+  height: 50px;
+}
+.contact_button a{
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #3d99b3;
+  border-radius: 5px;
+  padding: 14px 45px;
+}
+.contact_button a:hover{
+  background-color: #1d8993;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* main css */
+main{
+  text-align: center;
+}
+
+.page_jump{
+  position: fixed;
+  top: calc(50% - 80px/2);
+  right: 10px;
+  /* opacity: 0; */
+  z-index: 9;
+}
+.page_link{
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border: 2px solid #e4008f;
+  border-radius: 10px;
+  margin: 0px auto 20px auto;
+  position : relative;
+}
+.page_link:hover .balloon{
+  display: inline;
+}
+.balloon {
+  color: #FFFFFF;
+  width: 140px;
+  padding: 5px 0px;
+  background-color: #e4008f;
+  border-radius: 5px;
+  top: -35%;
+  right: 40px;
+  display: none;
+  position: absolute;
+}
+.balloon:after{
+  border-left: 9px solid #e4008f;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  right: -9px;
+  top: 25%;
+  content: "";
+  position: absolute;
+}
+.top_jump{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+.top_jump .balloon{
+  top: -5%;
+  right: 50px;
+}
+
+/* intro_section */
+.intro_section{
+  background-image: url(../img/intro/bg_introduction.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.intro_container{
+  width: 80% !important;
+  padding: 400px 0px !important;
+}
+.intro_contents{
+  color: #555555;
+  text-align: left;
+  text-shadow: 1px 1px 2px #FFFFFF;
+}
+.inrto_title{
+  font-family: 游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro",HGS明朝E,メイリオ,Meiryo,serif;
+  margin-bottom: 10px;
+}
+.intro_contents img{
+  width: 400px;
+  padding-bottom: 5px;
+  margin-right: 5px;
+  filter: drop-shadow(1px 1px 1px #FFFFFF);
+}
+.entry_button{
+  margin-bottom: 30px;
+}
+.entry_button a{
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #3d99b3;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px 0px #707070;
+  padding: 20px 150px;
+}
+.intro_container .entry_button a{
+  position: relative;
+  bottom: -15px;
+}
+.entry_button a:hover{
+  background-color: #1d8993;
+  color: #ffffff;
+}
+
+/* catch_section */
+.catch_section{
+  background-image: url(../img/catch/bg_catch.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.catch_container{
+  padding: 120px 0px !important;
+}
+.catch_text_box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.catch_img_contents{
+  width: 350px;
+}
+.catch_img_contents img{
+  width: 100%;
+}
+.catch_problem, .catch_answer, .catch_sum{
+  text-align: left;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
+.catch_problem, .catch_answer{
+  margin-bottom: 70px;
+}
+.catch_answer i, .catch_answer span{
+  color: #e4008f;
+}
+
+/* fstmerit_section */
+.fstmerit_section{
+  background-color: #eaf7fb;
+}
+.fstmerit_container span, .store_text{
+  color: #e4008f;
+}
+.fstmerit_title, .fstmerit_text{
+  margin-bottom: 30px;
+}
+.swiper-container{
+  width: 85%;
+  text-align: center;
+  margin: 10px 0px 30px 0px;
+}
+.swiper-slide{
+  /* border: 1px solid; */
+  padding: 20px 5px 5px 5px;
+}
+.swiper-slide:hover{
+  opacity: 0.7;
+}
+.item_box{
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 6px 0px #707070;
+}
+.item_contents{
+  padding: 10px;
+  position: relative;
+}
+.item_contents img{
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+}
+.item_contents:before{
+  content: url(../img/fstmerit/new.png);
+  position: absolute;
+  top: 45px;
+  right: 0px;
+}
+.item_text, .item_name{
+  text-align: left;
+  color: #000000;
+}
+.item_name{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.item_text span{
+  color: #e4008f;
+}
+.detail_button{
+  margin-bottom: 30px;
+}
+.detail_button a{
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #3d99b3;
+  border-radius: 5px;
+  padding: 14px 45px;
+}
+.detail_button a:hover{
+  background-color: #1d8993;
+}
+
+/* secmerit_section */
+.secmerit_section{
+  background-image: url(../img/secmerit/bg_notepersocon_ora.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.secmerit_title, .secmerit_summary{
+  text-shadow: 1px 1px 1px #ffffff;
+}
+.secmerit_title span{
+  color: #e4008f;
+}
+.secmerit_summary{
+  margin: 40px 0px;
+}
+.secmerit_box{
+  display: flex;
+  justify-content: center;
+}
+.secmerit_contents{
+  width: 400px;
+  background-color: #FFFFFF;
+  border-radius: 200px;
+  box-shadow: 0px 3px 6px 0px #707070;
+  margin: 10px;
+}
+.secmerit_contents:nth-child(2n+1){
+  position: relative;
+  top: 100px;
+}
+.secmerit_wrapper{
+  padding: 50px 15px;
+}
+.secmerit_text{
+  color: #e4008f;
+  padding: 5px 0px 0px 0px;
+}
+.secmerit_box img{
+  width: 100%;
+  max-width: 320px;
+  border-radius: 80px;
+  padding: 15px 10px 15px 10px;
+}
+.secmerit_footer_text{
+  margin-top: 30px;
+}
+
+/* thdmerit_section */
+.thdmerit_section{
+  background-color: #eaf7fb;
+}
+.thdmerit_container span{
+  color: #e4008f;
+}
+.step_title{
+  margin: 40px 0px 70px 0px;
+}
+.step_box{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.step_contents img{
+  width: 70%;
+}
+.step_flow{
+  color: #3d99b3;
+  font-size: 110px;
+  margin: auto 0px;
+}
+.step_text{
+  width: 300px;
+  color: #3d99b3;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 10px auto;
+}
+
+/* interview_title_section */
+.interview_container{
+  padding-bottom: 20px !important;
+}
+.interview_intro{
+  line-height: 1.2em;
+  margin-bottom: 30px;
+}
+.interview_intro span, .interview_title{
+  color: #e4008f;
+}
+.interview_diamond{
+  width: 45px;
+  height: 45px;
+  background-color: #FFFFFF;
+  transform:
+    rotate(45deg)
+    skew(
+      calc((90deg - 90deg) / 2),
+      calc((90deg - 90deg) / 2)
+    ); /* calc((90deg - 欲しい角度) / 2) */
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+  top: -25px;
+}
+
+/* interview_section */
+.interview_section{
+  background-color: #eaf7fb;
+}
+.interview_container{
+  padding-top: 0px !important;
+}
+.interview_contents{
+  display: flex;
+  justify-content: center;
+}
+.interview_contents:not(:last-child){
+  margin-bottom: 50px;
+}
+.interview_img_contents{
+  width: 20%;
+}
+.interview_img_contents img{
+  width: 100%;
+  max-width: 225px;
+  background-color: #EEEEEE;
+  border: 3px solid #3d99b3;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0px 10px;
+}
+.interview_text_contents{
+  width: 60%;
+  max-width: 450px;
+  text-align: left;
+  margin: 0px 50px;
+}
+.interview_sub_contents{
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #000000;
+}
+.interview_subsm{
+  line-height: 1.2em;
+}
+.interview_sublg{
+  color: #e4008f;
+  line-height: 1.5em;
+}
+.interview_name_contents{
+  display: flex;
+  margin: 10px 0px;
+}
+.interview_summary{
+  margin-bottom: 10px;
+}
+.interview_comment i, .interview_comment span{
+  color: #e4008f;
+}
+
+/* meritsum_section */
+.meritsum_title span, .fa-check-square, .meritsum_list span{
+  color: #e4008f;
+}
+.meritsum_contents{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.meritsum_contents img{
+  width: 200px;
+  border-radius: 100px;
+  box-shadow: 0px 3px 6px 0px #707070;
+}
+.meritsum_list{
+  display: inline-block;
+  padding-left: 15px;
+  margin: auto 0px;
+}
+.meritsum_list li{
+  text-align: left;
+}
+.meritsum_list li:not(:last-child){
+  margin-bottom: 15px;
+}
+.meritsum_text{
+  margin-bottom: 20px;
+}
+
+/* course_section */
+.course_section{
+  background-color: #eaf7fb;
+}
+.course_title span{
+  color: #e4008f;
+}
+.course_box{
+  width: 100%;
+  max-width: 950px;
+  margin: 50px auto 10px auto;
+}
+.course_wrapper{
+  background-color: #FFFFFF;
+  text-align: left;
+  margin: auto;
+}
+.course_contents{
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+}
+.course_title_contents{
+  text-align: center;
+  margin: auto 20px;
+}
+.course_title_contents img{
+  width: 200px;
+  margin-bottom: 10px;
+}
+.course_title.store{
+  color: #e4008f;
+}
+.course_title.item{
+  color: #3d99b3;
+}
+.course_sub{
+  color: #FFFFFF;
+  padding: 10px 20px;
+}
+.course_text_contents{
+  padding: 20px;
+}
+.course_sub.store{
+  background-color: #e4008f;
+}
+.course_sub.item{
+  background-color: #3d99b3;
+}
+.plan_contents{
+  display: block;
+  padding: 0px;
+  margin: auto;
+}
+.plan_contents:not(:last-child){
+  margin-bottom: 15px;
+}
+.plan_up_contents{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+}
+.store_plan .plan_up_contents{
+  background-color: #e4008f;
+}
+.item_plan .plan_up_contents{
+  background-color: #3d99b3;
+}
+.plan_up_text{
+  color: #FFFFFF;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+.plan_up_contents:after{
+  color: #FFFFFF;
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  font-weight: 900;
+  font-size: 36px;
+  font-weight: 900;
+  margin-left: auto;
+  margin-right: 20px;
+}
+.plan_up_contents.on:after{
+  content: "\f106";
+}
+.plan_down_contents{
+  background-color: #FFFFFF;
+  padding: 15px 30px;
+  display: none;
+}
+.plan_down_annotation{
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.plan_table{
+  width: 100%;
+  border-top: 1px solid;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+.store_plan .plan_table{
+  border-color: #e4008f;
+}
+.item_plan .plan_table{
+  border-color: #3d99b3;
+}
+.plan_record{
+  border-bottom: 1px dotted #e5e5e5;
+}
+.plan_title, .plan_text{
+  text-align: left;
+  padding: 20px 15px;
+}
+.plan_price{
+  text-align: right;
+  padding: 15px 40px 15px 20px;
+}
+.store_plan .plan_price, .store_plan .plan_down_annotation{
+  color: #e4008f;
+}
+.item_plan .plan_price, .item_plan .plan_down_annotation{
+  color: #3d99b3;
+}
+.course_entry_text{
+  margin: 40px 0px 20px 0px;
+}
+.news_contents{
+  width: 85%;
+  margin: auto;
+  margin-top: 40px;
+}
+.news_title{
+  margin-bottom: 10px;
+}
+.news_list{
+  height: 200px;
+  background-color: #FFFFFF;
+  overflow: scroll;
+  overflow-x: hidden;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  text-align: left;
+  margin: 0px;
+}
+.news_item:not(:last-child){
+  margin-bottom: 10px;
+}
+.news_category{
+  color: #ffffff;
+  background-color: #3d99b3;
+  border-radius: 2px;
+  padding: 0px 20px 2px 20px;
+  margin: 0px 10px;
+}
+
+/* footer_container */
+.footer_container{
+  color: #FFFFFF;
+  background-color: #393e46;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.footer_container .sns_contents{
+  padding: 10px 0px 20px 0px;
+}
+.sns_contents a{
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 1px 10px 4px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.sns_contents a:hover{
+  color: #FFFFFF;
+  font-size: 12px;
+  background-color: #0074df;
+  text-decoration: none;
+}
+.fl_tw1{
+  background-color: #1b95e0;
+}
+.fl_tw1:hover{
+  background-color: #0074df;
+}
+.fl_fb1, .fl_fb2{
+  background-color: #4267b2;
+}
+
+
+/* smart phone */
+@media screen and (max-width: 799px) {
+  /* header css */
+  .title_contents{
+    padding: 13px 20px;
+  }
+  .logo_contents img{
+    width: 192px;
+    height: 32px;
+  }
+  .logotitle{
+    font-weight: bold;
+  }
+  .contact_button a{
+    padding: 7px 20px;
+  }
+
+  /* main css */
+  .page_top{
+    width: 50px;
+    height: 60px;
+    position: fixed;
+    right: 15px;
+    bottom: 25px;
+    background-color: #ffbbcf;
+    opacity: 0;
+  }
+  .page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 60px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  .page_top a:before{
+    color: #e4008f;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f106';
+    font-size: 26px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+  /* intro_section */
+  .intro_container{
+    width: 90% !important;
+    padding: 200px 0px 150px 0px !important;
+  }
+  .intro_contents img{
+    width: 240px;
+  }
+  .entry_button a{
+    padding: 10px 30px;
+  }
+
+  /* catch_section */
+  .catch_container{
+    padding: 50px 0px !important;
+  }
+  .catch_problem, .catch_sum{
+    text-align: center;
+  }
+  .catch_text_box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .catch_problem, .catch_answer{
+    margin-bottom: 10px;
+  }
+  .catch_img_contents{
+    width: 125px;
+  }
+  .catch_img_contents img{
+    width: 100%;
+  }
+
+  /* fstmerit_section */
+  .fstmerit_img_contents{
+    width: 90%;
+  }
+  .swiper-container{
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .item_contents:before{
+    transform: scale(0.7);
+    top: 25px;
+    right: -10px;
+  }
+  .detail_button a{
+    padding: 10px 35px;
+  }
+
+  /* secmerit_contents */
+  .secmerit_summary{
+    margin: 20px 0px;
+  }
+  .secmerit_box{
+    display: block;
+  }
+  .secmerit_wrapper{
+    padding: 15px;
+  }
+  .secmerit_contents{
+    width: 95%;
+    height: 100%;
+    position: static !important;
+    border-radius: 0px;
+    margin: 20px auto;
+  }
+  .secmerit_box img{
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 0px;
+    padding: 0px;
+    margin-top: 15px;
+  }
+
+  /* thdmerit_section */
+  .step_title{
+    margin-bottom: 30px;
+  }
+  .step_box{
+    display: block;
+    margin-bottom: 20px;
+  }
+  .step_flow{
+    font-size: 64px;
+  }
+  .step_text{
+    width: 200px;
+    padding: 3px;
+  }
+
+  /* interview_section */
+  .interview_contents:not(:last-child){
+    margin-bottom: 20px;
+  }
+  .interview_sub_contents{
+    justify-content: center;
+    margin: auto;
+  }
+  .interview_name_contents{
+    justify-content: center;
+  }
+  .interview_name{
+    margin-top: auto;
+  }
+  .interview_img_contents img{
+    width: 100px;
+    padding: 5px;
+  }
+  .interview_summary{
+    text-align: center;
+  }
+  .interview_text_contents{
+    width: 100%;
+    margin: 0px 10px;
+  }
+
+  /* meritsum_contents */
+  .meritsum_list li:not(:last-child){
+    margin-bottom: 5px;
+  }
+  .meritsum_contents{
+    display: block;
+  }
+  .meritsum_contents img{
+    width: 150px;
+    margin-top: 15px;
+    /* border-radius: 0px; */
+  }
+
+  /* course_section */
+  .course_box{
+    margin: 30px auto 10px auto;
+  }
+  .course_contents{
+    padding: 15px;
+  }
+  .course_title_contents{
+    margin: auto 0px;
+  }
+  .course_title_contents img{
+    width: 100px;
+  }
+
+  .plan_up_text{
+    padding-left: 0px;
+  }
+  .plan_up_contents:after{
+    font-weight: 600;
+    font-size: 32px;
+    margin-right: 10px;
+  }
+  .plan_down_contents{
+    background-color: #FFFFFF;
+    padding: 10px;
+  }
+  .plan_down_annotation{
+    margin-bottom: 15px;
+  }
+  .plan_title{
+    text-align: left;
+    padding: 15px 0px 0px 10px;
+  }
+  .plan_text{
+    padding: 0px 0px 15px 10px;
+  }
+  .plan_price{
+    text-align: right;
+    vertical-align: middle;
+    padding: 15px 10px 15px 0px;
+  }
+  .news_contents{
+    width: 100%;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 800px) and (max-width: 1189px) {
+  /* intro_section */
+  .entry_button a{
+    padding: 15px 100px;
+  }
+
+  /* secmerit_section */
+  .secmerit_contents:nth-child(2n+1){
+    top: 50px;
+  }
+  .secmerit_wrapper{
+    padding: 30px 15px;
+  }
+  .secmerit_box img{
+    max-width: 280px;
+    padding: 10px;
+  }
+  .secmerit_footer_text{
+    margin-top: 40px;
+  }
+
+  /* thdmerit_section */
+  .secmerit_summary{
+    margin: 40px 0px 20px 0px;
+  }
+  .step_contents img{
+    width: 60%;
+  }
+  .step_flow{
+    color: #3d99b3;
+    font-size: 70px;
+    margin: auto -15px;
+  }
+  .step_text{
+    width: 225px;
+  }
+
+  /* interview_section */
+  .interview_text_contents{
+    max-width: 410px;
+  }
+}
+
+/* pc */
+@media screen and (min-width: 1190px) {
+
+}

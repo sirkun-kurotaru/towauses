@@ -1,0 +1,124 @@
+/* style */
+body * p{
+  letter-spacing: 1.5px;
+  margin-bottom: 0px;
+}
+body * i{
+  margin: 0px 5px;
+}
+body * big{
+  font-size: 1.5em;
+}
+body * a, body * a:hover{
+  text-decoration: none;
+}
+.bold{
+  font-weight: bold;
+}
+
+/* container */
+.bg_blur{
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.body_container{
+  width: 90%;
+  max-width: 1400px;
+  padding: 50px 0px;
+  margin: auto;
+}
+
+/* smart phone */
+@media screen and (max-width: 799px) {
+  /* font size */
+  .txtsize_xxl{
+    font-size: 21px;
+  }
+  .txtsize_xl{
+    font-size: 19px;
+  }
+  .txtsize_lg{
+    font-size: 18px;
+  }
+  .txtsize_md{
+    font-size: 15px;
+  }
+  .txtsize_sm{
+    font-size: 14px;
+  }
+  .txtsize_xs{
+    font-size: 13px;
+  }
+  .txtsize_xxs{
+    font-size: 11px;
+  }
+
+  .body_container{
+    width: 95%;
+    padding: 30px 0px;
+  }
+
+  .pc_only{
+    display: none;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 800px) and (max-width: 1189px) {
+  /* font size */
+  .txtsize_xxl{
+    font-size: 36px;
+  }
+  .txtsize_xl{
+    font-size: 27px;
+  }
+  .txtsize_lg{
+    font-size: 22px;
+  }
+  .txtsize_md{
+    font-size: 19px;
+  }
+  .txtsize_sm{
+    font-size: 18px;
+  }
+  .txtsize_xs{
+    font-size: 14px;
+  }
+  .txtsize_xxs{
+    font-size: 13px;
+  }
+
+  .sp_only{
+    display: none;
+  }
+}
+
+/* pc */
+@media screen and (min-width: 1190px) {
+  /* font size */
+  .txtsize_xxl{
+    font-size: 40px;
+  }
+  .txtsize_xl{
+    font-size: 30px;
+  }
+  .txtsize_lg{
+    font-size: 26px;
+  }
+  .txtsize_md{
+    font-size: 24px;
+  }
+  .txtsize_sm{
+    font-size: 20px;
+  }
+  .txtsize_xs{
+    font-size: 15px;
+  }
+  .txtsize_xxs{
+    font-size: 13px;
+  }
+
+  .sp_only, .tb_sp{
+    display: none;
+  }
+}
